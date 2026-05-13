@@ -5,8 +5,8 @@ import plotly.graph_objects as go
 
 # Konfigurasi Header
 st.set_page_config(page_title="Simulasi nikel PT StanIndo", layout="wide")
-st.title("🚀 Alat Simulasi Harga & Alokasi Sumber Daya Nikel")
-st.markdown("### Studi Kasus: PT StanIndo Inti Perkasa")
+st.title("Alat Simulasi Harga & Alokasi Sumber Daya Nikel")
+st.markdown("Studi Kasus: PT StanIndo Inti Perkasa")
 
 # --- PARAMETER BERDASARKAN DOKUMEN PERUSAHAAN ---
 # Fungsi Permintaan: P = 31.000 - 11q
@@ -46,7 +46,7 @@ def run_simulation():
             
         # Laju Ekstraksi q = (a - P) / b
         q_t = max(0, (a_default - p_t) / b_default)
-        
+        fill='tozeroy'
         if current_S <= 0:
             q_t = 0
             p_t = a_default
@@ -86,3 +86,4 @@ with col2:
     st.plotly_chart(fig_q, use_container_width=True)
 
 st.table(df.head(11))
+st.write
