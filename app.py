@@ -86,4 +86,3 @@ with col2:
     st.plotly_chart(fig_q, use_container_width=True)
 
 st.table(df.head(11))
-st.info
