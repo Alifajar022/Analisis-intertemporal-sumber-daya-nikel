@@ -46,7 +46,7 @@ def run_simulation():
             
         # Laju Ekstraksi q = (a - P) / b
         q_t = max(0, (a_default - p_t) / b_default)
-        fill='tozeroy'
+        
         if current_S <= 0:
             q_t = 0
             p_t = a_default
@@ -86,4 +86,4 @@ with col2:
     st.plotly_chart(fig_q, use_container_width=True)
 
 st.table(df.head(11))
-st.write
+st.info
