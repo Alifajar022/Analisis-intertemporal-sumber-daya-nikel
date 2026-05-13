@@ -1,1 +1,1 @@
-# Analisis-intertemporal-sumber-daya-nikel
+ Analisis-intertemporal-sumber-daya-nikel 
